@@ -1,26 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import algoliasearch from 'algoliasearch';
+import {
+  InstantSearch,
+  Hits,
+  SearchBox,
+  Pagination,
+  ClearRefinements,
+  RefinementList,
+  Configure
+} from 'react-instantsearch-dom';
+import Hit from './components/Hit';
 
-function App() {
+const App = () => {
+
+  const searchClient = algoliasearch(
+    'FARP9RXLRO',
+    'b01c3df31b4ce1680f4dffa8d3b96ccf'
+  );
+
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="ais-InstantSearch">
+      <h1>React InstantSearch e-commerce demo</h1>
+      <InstantSearch indexName="pokedex" searchClient={searchClient}>
+        <div className="left-panel">
+          <ClearRefinements />
+          <h2>Brands</h2>
+          <RefinementList attribute="name" />
+          <Configure hitsPerPage={8} />
+        </div>
+        <div className="right-panel">
+          <SearchBox />
+          <Hits hitComponent={Hit} />
+          <Pagination />
+        </div>
+      </InstantSearch>
     </div>
   );
+  
 }
 
 export default App;
