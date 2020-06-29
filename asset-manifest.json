@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mintbean-algolia/static/css/main.5f361e03.chunk.css",
+    "main.js": "/mintbean-algolia/static/js/main.b68aa2d4.chunk.js",
+    "main.js.map": "/mintbean-algolia/static/js/main.b68aa2d4.chunk.js.map",
+    "runtime-main.js": "/mintbean-algolia/static/js/runtime-main.656110ca.js",
+    "runtime-main.js.map": "/mintbean-algolia/static/js/runtime-main.656110ca.js.map",
+    "static/js/2.577120d7.chunk.js": "/mintbean-algolia/static/js/2.577120d7.chunk.js",
+    "static/js/2.577120d7.chunk.js.map": "/mintbean-algolia/static/js/2.577120d7.chunk.js.map",
+    "index.html": "/mintbean-algolia/index.html",
+    "precache-manifest.528feab06970e3a007798cd5986fa9f6.js": "/mintbean-algolia/precache-manifest.528feab06970e3a007798cd5986fa9f6.js",
+    "service-worker.js": "/mintbean-algolia/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/mintbean-algolia/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.577120d7.chunk.js.LICENSE.txt": "/mintbean-algolia/static/js/2.577120d7.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/mintbean-algolia/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.656110ca.js",
+    "static/js/2.577120d7.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.b68aa2d4.chunk.js"
+  ]
+}
